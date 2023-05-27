@@ -4,7 +4,7 @@ Wadhwani AI has developed a mobile app that allows farmers to take photographs o
 This competition objective is to use our training data – data captured by farmers and farm extension workers since 2018 – to build models that accurately count the number of  2 type of bollworms present in the image.
 (https://zindi.africa/competitions/wadhwani-ai-bollworm-counting-challenge).
 
-## solution overview:
+  ## Solution Overview:
 Our training data contatins Bbox of detecting bollworms for that we tried two approaches:
 • First approach : Build Object detection model using Faster-RCNN to detect bollworm boxes and then count the bounding boxes for every type.
 • Second approach : Build image classifier so  we can detecte images without bollworms and reduce Flase Positive:
