@@ -8,16 +8,16 @@ This competition objective is to use our training data – data captured by farm
 Our training data contatins Bbox of detecting bollworms for that we tried two approaches:
 • First approach : Build Object detection model using Faster-RCNN to detect bollworm boxes and then count the bounding boxes for every type.
 • Second approach : Build image classifier so  we can detecte images without bollworms and reduce Flase Positive:
-Model: densenet201 image size 500
-Batch size: 8
-Epochs: 4
-Optimizer: SGD 
-Augmentations: Hflip + Vflip + Mosaic + Mixup
-Loss: CELoss
+* Model: densenet201 image size 500
+* Batch size: 8
+* Epochs: 4
+* Optimizer: SGD 
+* Augmentations: Hflip + Vflip + Mosaic + Mixup
+* Loss: CELoss
 
 Then a regression model where we used only images classified as they got bollworms :
-Model: EfficientNetB6 image size 500 /We unfreeze the top 20 layers while leaving BatchNorm layers frozen/
-Batch size: 16
-Epochs: 20
-Optimizer: Adam
-Loss: MeanSquaredError
+* Model: EfficientNetB6 image size 500 /We unfreeze the top 20 layers while leaving BatchNorm layers frozen/
+* Batch size: 16
+* Epochs: 20
+* Optimizer: Adam
+* Loss: MeanSquaredError
