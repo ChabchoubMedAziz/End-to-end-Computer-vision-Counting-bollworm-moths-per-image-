@@ -7,9 +7,9 @@ This competition objective is to use our training data – data captured by farm
   ## Solution Overview:
 Our training data contatins Bbox of detecting bollworms for that we tried two approaches:
 
-• First approach : Build Object detection model using Faster-RCNN to detect bollworm boxes and then count the bounding boxes for every type.
+• **First approach** : Build Object detection model using Faster-RCNN to detect bollworm boxes and then count the bounding boxes for every type.
 
-• Second approach : Build image classifier so  we can detecte images without bollworms and reduce Flase Positive:
+• **Second approach** : Build image classifier so  we can detecte images without bollworms and reduce Flase Positive:
 
 * Model: densenet201 image size 500
 * Batch size: 8
